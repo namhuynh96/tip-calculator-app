@@ -1,0 +1,53 @@
+.appBackground {
+  background-color: var(--light-grayish-cyan1);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.title {
+  height: calc(100vh - 700px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-cyan);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.appWrapper {
+  height: 700px;
+  width: 100vw;
+  background: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .appContainer {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    height: 100vh;
+  }
+
+  .title {
+    height: unset;
+    font-size: 25px;
+  }
+
+  .appWrapper {
+    position: unset;
+    height: 400px;
+    width: 800px;
+    border-radius: 30px;
+  }
+}

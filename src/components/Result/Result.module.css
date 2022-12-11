@@ -1,0 +1,57 @@
+.container {
+  background-color: var(--dark-cyan);
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--light-grayish-cyan1);
+  font-weight: bold;
+}
+
+.perPerson {
+  color: var(--dark-grayish-cyan1);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.amount {
+  color: var(--strong-cyan);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.unableResetBtn,
+.unableResetBtn:hover {
+  background-color: var(--dark-grayish-cyan1);
+  color: var(--dark-grayish-cyan2);
+  cursor: not-allowed;
+}
+
+.ableResetBtn {
+  background-color: var(--strong-cyan);
+  color: var(--dark-cyan);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    position: relative;
+    padding: 40px 30px;
+  }
+
+  .resetBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    width: calc(100% - 60px);
+  }
+}

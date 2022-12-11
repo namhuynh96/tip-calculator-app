@@ -1,0 +1,35 @@
+.label {
+  color: var(--dark-grayish-cyan1);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.tipButtonsContainer {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 14px 6%;
+}
+
+.selectedBtn {
+  background-color: var(--strong-cyan);
+  color: var(--dark-cyan);
+}
+
+.customBtn {
+  background-color: var(--light-grayish-cyan2);
+  color: var(--dark-grayish-cyan2);
+  text-align: right;
+  padding-right: 20px;
+}
+
+.input {
+  height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .tipButtonsContainer {
+    grid-template-columns: 30.67% 30.67% 30.67%;
+    gap: 14px 4%;
+  }
+}
